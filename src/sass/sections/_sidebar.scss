@@ -1,0 +1,111 @@
+.sidebar {
+    background-color: $color-black;
+    top: 0;
+    position: sticky;
+    
+}
+
+.sidebar-content {
+    padding: 0;
+}
+
+.sidebar-title {
+    font-family: $fancy-font;
+    color: $color-white;
+    text-align: left;
+    padding-left: 16px;
+    padding-top: 10px;
+    h3 {
+        font-size: 24px;
+    }
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+        padding: 8px 12px;
+        &:hover {
+            border-left: 4px solid $color-orange;
+        }
+    }
+    li span {
+        padding-left: 20px;
+    }
+    li a {
+        text-decoration: none;
+        color: $color-gray;
+    }
+    li a:hover {
+        color: $color-white;
+    }
+}
+
+.manager {
+    border-top: 1px solid $color-gray;
+}
+
+.manager h3 {
+    font-size: 18px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.manager .name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    h3 {
+        font-size: 16px;
+    }
+    img {
+        height: 50px;
+        width: 50px;
+    }
+    span {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: green;
+        border-radius: 50%;
+        left: 38px;
+        top: 16px;
+    }
+}
+
+.manager h4 {
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 10px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.hamburger-btn {
+    display: none;
+    justify-content: center;
+}
+
+.hamburger-btn a i {
+    color: $color-gray;
+    padding: 12px 0 0 0;
+    font-size: 24px;
+    
+    &:hover {
+        color: $color-orange;
+        transition: 2s all;
+        transform: scale(1.5);
+    }
+}
+
+
+@media (max-width: 991px) {
+    .hamburger-btn {
+        display: flex;
+    }
+    .sidebar-mbl {
+        display: none;
+    }
+}

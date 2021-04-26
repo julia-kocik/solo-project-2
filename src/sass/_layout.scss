@@ -13,7 +13,11 @@ body {
 
 .container {
     border: 3px solid black;
-   
+    min-height: 100vh;
+}
+
+.main {
+    min-height: 100vh;
 }
 
 .row {
