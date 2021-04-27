@@ -113,7 +113,23 @@
     color: $color-gray;
     padding: 10px 20px;
     margin: 10px;
-    display: inline-block;
+    display: block;
+    border-radius: 3px;
+  }
+  .answer {
+    text-align: right;
+    background-color: green;
+    color: #ffffff;
+    display: none;
+  }
+  .answer-back {
+    text-align: left;
+    background-color: $color-gray-light;
+    color: $color-gray;
+    display: none;
+  }
+  .answer-active {
+    display: block;
   }
 }
 

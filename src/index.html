@@ -17,40 +17,42 @@
         <div class="row main">
             <!-- MODALE -->
         <!-- MODAL MANAGER -->
-        <div class="overlay" id="overlay">
-            <div class="modal" id="myModal">
-                <div class="modal-title">
-                    <h3>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h3>
-                    <div class="btn-close js--close-modal">x</div>
-                </div>
-                <div class="modal-name">
-                    <img src="./images/person_1.png" alt="Mikhael">
-                    <div class="modal-name-box">
-                        <h4>Mikhael E.</h4>
-                        <span>online</span>
+            <div class="overlay" id="overlay">
+                <div class="modal" id="myModal">
+                    <div class="modal-title">
+                        <h3>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h3>
+                        <div class="btn-close js--close-modal">x</div>
+                    </div>
+                    <div class="modal-name">
+                        <img src="./images/person_1.png" alt="Mikhael">
+                        <div class="modal-name-box">
+                            <h4>Mikhael E.</h4>
+                            <span>online</span>
+                        </div>
+                    </div>
+                    <div class="modal-message-1">
+                        <span>How can I help you?</span>
+                        <span class="answer">Hello</span>
+                        <span class="answer-back">Thank you for your message. I am working on it and I'll get back you soon :)</span>
+                    </div>
+                    <div class="modal-message-box">
+                        <input type="text" required class="message-input">
+                        <input type="submit" value="Send" class="send">
                     </div>
                 </div>
-                <div class="modal-message-1">
-                    <span>How can I help you?</span>
-                </div>
-                <div class="modal-message-box">
-                    <input type="text" required>
-                    <input type="submit" value="Send">
+            </div>
+            <!-- MODAL QUIT -->
+            <div class="overlay" id="overlay-quit">
+                <div class="modal" id="quit">
+                    <div class="modal-title">
+                        <h3>Do you really want to quit?</h3>
+                    </div>
+                    <div class="btn cancel js--close-modal">
+                        <a href="#"> Cancel</a>
+                        <a href="#"> Quit</a>
+                    </div>
                 </div>
             </div>
-    </div>
-    <!-- MODAL QUIT -->
-    <div class="overlay" id="overlay-quit">
-            <div class="modal" id="quit">
-                <div class="modal-title">
-                    <h3>Do you really want to quit?</h3>
-                </div>
-                <div class="btn cancel js--close-modal">
-                    <a href="#"> Cancel</a>
-                    <a href="#"> Quit</a>
-                </div>
-            </div>
-    </div>
             <!-- SIDEBAR -->
             <div class="col-sm-1 col-md-1 col-lg-2 sidebar">
                 <div class="row sidebar-row">
@@ -109,7 +111,7 @@
                         <span><b>$ 1500.00</b></span>
                         <i class="fas fa-arrow-down"></i>
                     </div>
-                    <div class="col-md-2 col-lg-1 header-box header-box-effect">
+                    <div class="col-md-2 col-lg-1 header-box header-box-effect not">
                         <i class="far fa-bell"></i>
                     </div>
                     <div class="col-md-4 col-lg-3 header-box">

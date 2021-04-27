@@ -5,6 +5,10 @@
   const hamburger = document.querySelector('.hamburger-btn a');
   const sidebarContent = document.querySelector('.sidebar');
   const content = document.querySelectorAll('.page-container');
+  const not = document.querySelector('.not');
+  const answer = document.querySelector('.answer');
+  const messageInput = document.querySelector('.message-input');
+  const answerBack = document.querySelector('.answer-back');
 
   const initPages = () => {
     const idFromHash = window.location.hash.replace('#', '');
@@ -62,6 +66,8 @@
     for(let btn of closeBtns) {
       btn.classList.remove('show');
     }
+    answer.classList.remove('answer-active');
+    answerBack.classList.remove('answer-active');
   };
   
   const activateCloseModal = () => {
@@ -108,6 +114,22 @@
     document.querySelector('.quit').addEventListener('click', (e) => {
       e.preventDefault();
       openModal('#quit');
+    });
+  };
+
+  const alertNot = () => {
+    not.addEventListener('click', (e) => {
+      e.preventDefault();
+      alert('You have no new notifications');
+    });
+  };
+
+  const sendMessage = () => {
+    document.querySelector('.send').addEventListener('click', (e) => {
+      e.preventDefault();
+      answer.textContent = messageInput.value;
+      answer.classList.add('answer-active');
+      answerBack.classList.add('answer-active');
     });
   };
 
@@ -164,6 +186,8 @@
     activateCloseModal();
     activateOpenModal();
     initDatePicker();
+    alertNot();
+    sendMessage();
   };
 
   app();

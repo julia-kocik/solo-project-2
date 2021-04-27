@@ -12,20 +12,8 @@ body {
     background-color: $color-white;
 }
 
-.container {
-    border: 3px solid black;
-}
-
 .main {
-    min-height: 140vh;
-}
-
-.row {
-    border: 3px solid green;
-}
-
-[class^="col-"] {
-    border: 3px solid red;
+    min-height: 150vh;
 }
 
 .header {
