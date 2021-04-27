@@ -1,0 +1,41 @@
+.header {
+    background-color: white;
+    i {
+        padding: 2px;
+    }
+    span {
+        padding-left: 6px;
+    }
+}
+
+.header-box {
+    border-right: 1px solid $color-gray-light;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-box-effect {
+    &:hover {
+        cursor: pointer;
+        color: $color-orange;
+        i {
+            transform: scale(1.5);
+            transition: $transition;
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-box-mb {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        display: none;
+    }   
+}

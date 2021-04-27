@@ -1,0 +1,33 @@
+.table-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-top: 1px solid $color-gray-light;
+    padding: 20px 0;  
+}
+
+.scroll {
+    overflow-x: scroll;
+    width: 700px;
+    height: 300px;
+    padding: 0 30px;
+}
+
+.table-scroll {
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+    tr {
+        border-bottom: 1px solid $color-gray-light;
+        &:hover {
+            background-color: $color-gray-light;
+        }
+    }
+    td, th {
+        padding: 0 5px;
+    }
+}

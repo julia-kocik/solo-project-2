@@ -1,0 +1,37 @@
+.table-links {
+    margin: 20px 0;
+    td {
+        padding: 8px 60px;
+        a {
+            text-decoration: none;
+        }
+        i {
+            padding: 0 6px;
+            visibility: hidden;
+        }
+        &:hover {
+            cursor: pointer;
+            i {
+                visibility: visible;
+                color: $color-gray;
+                &:hover {
+                    color: $color-orange;
+                }
+            }
+        }
+    }
+    td:first-of-type {
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 767px) {
+    .links-container {
+        height: auto;
+    } 
+    .table-links tr {
+        display: flex;
+        flex-direction: column;
+    }
+}

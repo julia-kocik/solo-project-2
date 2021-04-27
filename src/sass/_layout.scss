@@ -9,29 +9,29 @@ body {
     line-height: 1.7;
     font-family: $main-font;
     color: $color-gray;
+    background-color: $color-white;
 }
 
 .container {
     border: 3px solid black;
-    min-height: 100vh;
 }
 
 .main {
-    min-height: 100vh;
+    min-height: 140vh;
 }
 
 .row {
     border: 3px solid green;
 }
 
-.col-2, .col-10, .col-3, .col-9, .col-1, .col-4, .col-5, .col-6, .col-7, .col-8, .col-12, .col-11 {
+[class^="col-"] {
     border: 3px solid red;
 }
 
 .header {
-    height: 15%
+    height: 7%
 }
 
 .page-container {
-    height: 85%;
+    height: 93%;
 }

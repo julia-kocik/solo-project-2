@@ -1,0 +1,15 @@
+.form-basic, .form-skype, .form-wallet, .form-password {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 1px solid $color-gray-light;
+    padding: 18px 42px;
+    input, label {
+        flex: 0 0 50%;
+        margin: 12px 0;
+    }
+    input {
+        border: 1px solid $color-gray;
+        border-radius: 6px;
+    }
+}

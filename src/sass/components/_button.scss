@@ -1,0 +1,29 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;
+    a, input {
+        text-decoration: none;
+        background-color: $color-orange;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.cancel {
+    a:first-of-type {
+        background-color: $color-gray;
+        margin-right: 10px;
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+    a:last-of-type {
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+}
