@@ -106,8 +106,15 @@
 @media (max-width: 991px) {
     .hamburger-btn {
         display: flex;
+        background-color: $color-black;
     }
-    .sidebar-mbl {
+    .sidebar {
         display: none;
     }
+    .sidebar-active {
+        display: block;
+    }
+    
+    
+    
 }

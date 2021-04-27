@@ -3,8 +3,9 @@
   const navLinks = document.querySelectorAll('.links ul li a');
   const pages = document.querySelectorAll('.page');
   const hamburger = document.querySelector('.hamburger-btn a');
-  const sidebarContent = document.querySelector('.sidebar');
-  const content = document.querySelectorAll('.page-container');
+  const sidebarContent = document.querySelector('.sidebar-content');
+  const sidebar = document.querySelector('.sidebar');
+  const headerCol = document.querySelector('.header-col');
   const not = document.querySelector('.not');
   const answer = document.querySelector('.answer');
   const messageInput = document.querySelector('.message-input');
@@ -46,15 +47,13 @@
     }
   };
 
-  const initSidebar = () => {
+  const initSidebar = () => { 
     hamburger.addEventListener('click', () => {
-      sidebarContent.classList.toggle('sidebar-active');
+      sidebar.classList.toggle('sidebar-active');
+      sidebar.classList.toggle('col-sm-4');
+      headerCol.classList.toggle('col-sm-11');
+      headerCol.classList.toggle('col-sm-7');
     });
-    for(let elem of content) {
-      elem.addEventListener('click', () => {
-        sidebarContent.classList.remove('sidebar-active');
-      });
-    }
   };
 
   //modals
