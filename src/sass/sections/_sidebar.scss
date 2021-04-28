@@ -140,6 +140,9 @@
     .manager {
         border: none;
         padding: 0 10px;
+        h3 {
+            margin: 12px 0;
+        }
     } 
     .links ul li span {
         padding-left: 14px;
@@ -159,4 +162,11 @@
     #data-spn {
         font-size: 14px;
     }
+    .manager {
+        border: none;
+        padding: 0 10px;
+        h3 {
+            margin: 12px 0;
+        }
+    } 
 }

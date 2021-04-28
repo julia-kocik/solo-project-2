@@ -127,6 +127,7 @@
 
 .modal-message-1 {
   padding: 10px 10px 120px 10px;
+  width: 400px;
   border-bottom: 1px solid $color-gray-light;
   span {
     background-color: $color-gray-light;
@@ -199,6 +200,8 @@
   }
   .modal-message-box {
     flex-direction: column;
-    
+  }
+  .modal-message-1 {
+    width: 300px;
   }
 }
