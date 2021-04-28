@@ -41,14 +41,10 @@
     }
     li a {
         text-decoration: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
         color: $color-gray;
-        .icon {
-            height: 20px;
-            width: 20px !important;
-            color: #fff;
-            background-image: url("../../images/person_1.png");
-            background-color: white;
-        }
     }
     li a:hover {
         color: $color-white;
@@ -138,14 +134,10 @@
         display: block;
     }
     .manager {
-        border: none;
         padding: 0 10px;
         h3 {
             margin: 12px 0;
         }
-    } 
-    .links ul li span {
-        padding-left: 14px;
     } 
     #data-spn {
         font-size: 14px;
@@ -153,9 +145,6 @@
 }
 
 @media (max-width: 767px) {
-    .links ul li span {
-        padding-left: 5px;
-    } 
     .sidebar {
         padding-right: 2px;
     }
@@ -163,7 +152,6 @@
         font-size: 14px;
     }
     .manager {
-        border: none;
         padding: 0 10px;
         h3 {
             margin: 12px 0;

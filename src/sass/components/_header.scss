@@ -23,8 +23,8 @@
 .header-box-effect {
     &:hover {
         cursor: pointer;
-        color: $color-orange;
-        i {
+        svg {
+            fill: $color-orange;
             transform: scale(1.5);
             transition: $transition;
         }
