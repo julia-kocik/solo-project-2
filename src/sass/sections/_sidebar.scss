@@ -1,5 +1,7 @@
 .sidebar {
     background-color: $color-black;
+    z-index: 99;
+    min-height: 158vh;
 }
 
 .sidebar-content {
@@ -27,6 +29,9 @@
     padding: 0;
     li {
         padding: 8px 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         &:hover {
             border-left: 4px solid $color-orange;
         }
@@ -37,6 +42,13 @@
     li a {
         text-decoration: none;
         color: $color-gray;
+        .icon {
+            height: 20px;
+            width: 20px !important;
+            color: #fff;
+            background-image: url("../../images/person_1.png");
+            background-color: white;
+        }
     }
     li a:hover {
         color: $color-white;
@@ -88,6 +100,7 @@
 .hamburger-btn {
     display: none;
     justify-content: center;
+    z-index: 99;
 }
 
 .hamburger-btn a i {
@@ -97,16 +110,22 @@
     
     &:hover {
         color: $color-orange;
-        transition: 2s all;
-        transform: scale(1.5);
     }
 }
 
 
 @media (max-width: 991px) {
     .hamburger-btn {
-        display: flex;
+        display: block;
         background-color: $color-black;
+        .burger-row {
+            top: 0;
+            position: sticky;
+            .burger-col {
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
     .sidebar {
         display: none;

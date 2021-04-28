@@ -12,21 +12,7 @@ body {
     background-color: $color-white;
 }
 
-.main {
-    min-height: 150vh;
-}
 
-.container {
-    border: 3px solid black;
-}
-
-.row {
-    border: 3px solid green;
-}
-
-[class^="col-"] {
-    border: 3px solid red;
-}
 
 .header {
     height: 7%

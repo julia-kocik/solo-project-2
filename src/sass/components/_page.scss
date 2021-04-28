@@ -1,13 +1,14 @@
 .page-container {
     height: auto;
     min-height: 110vh;
-    margin: 20px 2px;
+    margin: 10px 2px;
     width: 100%;
 } 
 
 .page-box {
     background-color: white;
-    padding: 0;
+    padding: 5px 0;
+    overflow: hidden;
 }
 
 .page {

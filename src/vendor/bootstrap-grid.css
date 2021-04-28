@@ -22,7 +22,7 @@ html {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  min-height: auto;
+  height: auto;
 }
 
 @media (min-width: 576px) {

@@ -1,3 +1,13 @@
+.links-bx {
+    padding: 0 0 198px 0 !important;
+    min-height: 100% !important;
+}
+
+.banners-bx {
+    padding: 0 0 228px 0 !important;
+    min-height: 100% !important;
+}
+
 .table-links {
     margin: 20px 0;
     td {
@@ -26,10 +36,8 @@
     }
 }
 
-@media (max-width: 767px) {
-    .links-container {
-        height: auto;
-    } 
+@media (max-width: 991px) {
+    
     .table-links tr {
         display: flex;
         flex-direction: column;

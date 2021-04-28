@@ -10,6 +10,7 @@
   const answer = document.querySelector('.answer');
   const messageInput = document.querySelector('.message-input');
   const answerBack = document.querySelector('.answer-back');
+ 
 
   const initPages = () => {
     const idFromHash = window.location.hash.replace('#', '');
@@ -50,9 +51,9 @@
   const initSidebar = () => { 
     hamburger.addEventListener('click', () => {
       sidebar.classList.toggle('sidebar-active');
-      sidebar.classList.toggle('col-sm-4');
+      sidebar.classList.toggle('col-sm-5');
       headerCol.classList.toggle('col-sm-11');
-      headerCol.classList.toggle('col-sm-7');
+      headerCol.classList.toggle('col-sm-6');
     });
   };
 

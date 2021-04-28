@@ -29,15 +29,11 @@
     margin: 10px 20px;
 }
 
-.chart-image {
-    display: flex;
-    justify-content: center;
-    padding: 0 120px;
-    img {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
+
+#myChart {
+    width: 100% !important;
+    padding: 40px 80px;
+    height: 445px !important;
 }
 
 @media (max-width: 991px) {
@@ -59,8 +55,9 @@
         flex-direction: column;
         align-items: center;
     }   
-    .chart-image {
-        max-width: 300px;
-        
+    #myChart {
+        width: 100% !important;
+        padding: 0;
+        height: auto !important;
     }
 }
