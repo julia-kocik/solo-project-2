@@ -118,6 +118,7 @@
     .hamburger-btn {
         display: block;
         background-color: $color-black;
+        margin-left: -1px;
         .burger-row {
             top: 0;
             position: sticky;
@@ -133,7 +134,10 @@
     .sidebar-active {
         display: block;
     }
-    
+    .manager {
+        border: none;
+        padding: 0 5px;
+    }
     
     
 }
