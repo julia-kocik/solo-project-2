@@ -7,6 +7,11 @@
     padding: 20px 0;
 }
 
+.user-info {
+    display: none;
+    padding: 0 12px;
+}
+
 .info-box {
     flex: 0 0 35%;
     display: flex;
@@ -47,6 +52,9 @@
             padding: 0 10px;
         }
     }
+    .user-info {
+        display: block;
+    }
     
 }
 
@@ -55,6 +63,9 @@
         flex-direction: column;
         align-items: flex-start;
     }   
+    .user-info {
+        display: block;
+    }
     .chart-title { 
         padding: 20px 10px;
     }
