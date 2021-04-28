@@ -10,7 +10,6 @@
   const answer = document.querySelector('.answer');
   const messageInput = document.querySelector('.message-input');
   const answerBack = document.querySelector('.answer-back');
-  const pageBox = document.querySelector('.page-box');
   const overNav = document.querySelector('.overlay-nav');
  
 

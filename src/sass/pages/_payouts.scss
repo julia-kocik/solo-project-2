@@ -21,7 +21,16 @@
 }
 
 .payouts-table-container {
+    overflow-x: scroll;
+    width: 700px;
+    height: 500px;
+    padding: 0 30px;
     th, td {
         padding: 8px 72px;
     }
+}
+
+.payouts-table {
+    table-layout: fixed;
+    border-collapse: collapse;
 }

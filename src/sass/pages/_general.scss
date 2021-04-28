@@ -53,8 +53,11 @@
 @media (max-width: 767px) {
     .info {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }   
+    .chart-title { 
+        padding: 20px 10px;
+    }
     #myChart {
         width: 100% !important;
         padding: 0;
