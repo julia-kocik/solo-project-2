@@ -11,6 +11,7 @@
   const messageInput = document.querySelector('.message-input');
   const answerBack = document.querySelector('.answer-back');
   const pageBox = document.querySelector('.page-box');
+  const overNav = document.querySelector('.overlay-nav');
  
 
   const initPages = () => {
@@ -59,11 +60,13 @@
       sidebar.classList.toggle('col-md-2');
       headerCol.classList.toggle('col-md-11');
       headerCol.classList.toggle('col-md-9');
+
+      overNav.classList.toggle('show');
     });
   };
 
   const closeSidebar = () => {
-    pageBox.addEventListener('click', () => {
+    overNav.addEventListener('click', () => {
       sidebar.classList.remove('sidebar-active');
       
       sidebar.classList.remove('col-sm-5');
@@ -74,6 +77,7 @@
       headerCol.classList.remove('col-md-9');
       headerCol.classList.add('col-md-11');
 
+      overNav.classList.remove('show');
     });
   };
 
