@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solo-project</title>
+    <link rel="stylesheet" href="vendor/bootstrap-grid.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container main-container">
+        <div class="row main">
+            <!-- MODALE -->
+        <!-- MODAL MANAGER -->
+            <div class="overlay" id="overlay">
+                <div class="modal" id="myModal">
+                    <div class="modal-title">
+                        <h3>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h3>
+                        <div class="btn-close js--close-modal">x</div>
+                    </div>
+                    <div class="modal-name">
+                        <img src="./images/person_1.png" alt="Mikhael">
+                        <div class="modal-name-box">
+                            <h4>Mikhael E.</h4>
+                            <span>online</span>
+                        </div>
+                    </div>
+                    <div class="modal-message-1">
+                        <span>How can I help you?</span>
+                        <span class="answer">Hello</span>
+                        <span class="answer-back">Thank you for your message. I am working on it and I'll get back to you soon :)</span>
+                    </div>
+                    <div class="modal-message-box">
+                        <input type="text" required class="message-input">
+                        <input type="submit" value="Send" class="send">
+                    </div>
+                </div>
+            </div>
+            <!-- MODAL QUIT -->
+            <div class="overlay" id="overlay-quit">
+                <div class="modal" id="quit">
+                    <div class="modal-title">
+                        <h3>Do you really want to quit?</h3>
+                    </div>
+                    <div class="btn cancel js--close-modal">
+                        <a href="#"> Cancel</a>
+                        <a href="#"> Quit</a>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay-nav" id="overlay-nav">
+                <div class="modal" id="modal-nav">
+                    
+                </div>
+            </div>
+            <!-- SIDEBAR -->
+            <div class="col-lg-2 sidebar">
+                <div class="row sidebar-row">
+                    <div class="col-12 sidebar-content sidebar-mbl">
+                        <div class="sidebar-title">
+                            <h3>Just do it</h3>
+                        </div>
+                        <div class="links">
+                            <ul>
+                                <li>
+                                    <a href="#general">
+                                        <svg class="icons-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 17 16" style="enable-background:new 0 0 17 16;" xml:space="preserve">
+                                        <path d="M8.5,3.6l0.9,2.7L9.6,7h0.7h2.8l-2.3,1.6l-0.6,0.4l0.2,0.7l0.9,2.7l-2.3-1.6l-0.6-0.4l-0.6,0.4l-2.3,1.6l0.9-2.7l0.2-0.7
+                                            L6.1,8.6L3.9,7h2.8h0.7l0.2-0.7L8.5,3.6 M8.5,0.4L6.7,6H0.8l4.8,3.5L3.7,15l4.8-3.5l4.8,3.5l-1.8-5.6L16.2,6h-5.9L8.5,0.4L8.5,0.4z"
+                                            />
+                                        </svg>
+                                        <span>General</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#details">
+                                        <svg class="icons-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 14 13" style="enable-background:new 0 0 14 13;" xml:space="preserve">
+                                        <path d="M0,13h14v-1H0V13z M0,10h14V6H0V10z M9,7h4v2H9V7z M1,7h7v2H1V7z M0,0v4h14V0H0z M5,3H1V1h4V3z M13,3H6V1h7V3z"/>
+                                        </svg>
+                                        <span>Details</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#links">
+                                        <svg class="icons-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve">
+                                        <path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                                            C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                                        </svg>
+                                        <span>Links</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#banners">
+                                        <svg class="icons-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 14 13" style="enable-background:new 0 0 14 13;" xml:space="preserve">
+                                        <path d="M0,6h6V0H0V6z M1,1h4v4H1V1z M8,0v8h6V0H8z M13,7H9V1h4V7z M0,13h6V8H0V13z M1,9h4v3H1V9z M8,13h6v-3H8V13z M9,11h4v1H9V11z
+                                            "/>
+                                        </svg>
+                                        <span>Banners</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#data">
+                                        <svg class="icons-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 9 14" style="enable-background:new 0 0 9 14;" xml:space="preserve">
+                                        <path d="M4.5,8C6.4,8,8,6.4,8,4.5S6.4,1,4.5,1S1,2.6,1,4.5S2.6,8,4.5,8z M4.5,2C5.9,2,7,3.1,7,4.5S5.9,7,4.5,7S2,5.9,2,4.5
+                                            S3.1,2,4.5,2z M7.7,7.7L6.9,8.3C8,9.5,8,11.1,8,12.9V13H1v-0.1C1,11.1,1,9.5,2,8.3L1.3,7.7C0,9.1,0,10.9,0,12.9L0,14h9l0-1.1
+                                            C9,10.9,9,9.1,7.7,7.7z"/>
+                                        </svg>
+                                        <span id="data-spn">Personal Data</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#payout">
+                                        <svg class="icons-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+                                        <path d="M10.5,0h-8C1.1,0,0,1.1,0,2.5v8C0,11.9,1.1,13,2.5,13h8c1.4,0,2.5-1.1,2.5-2.5v-8C13,1.1,11.9,0,10.5,0z M1,10.5v-8
+                                            C1,1.7,1.7,1,2.5,1H6v2H5C3.9,3,3,3.9,3,5s0.9,2,2,2h1v2H4v1h2v2H2.5C1.7,12,1,11.3,1,10.5z M6,4v2H5C4.4,6,4,5.6,4,5s0.4-1,1-1H6z
+                                            M7,7h1c0.6,0,1,0.4,1,1c0,0.6-0.4,1-1,1H7V7z M12,10.5c0,0.8-0.7,1.5-1.5,1.5H7v-2h1c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2H7V4h2V3H7V1
+                                            h3.5C11.3,1,12,1.7,12,2.5V10.5z"/>
+                                        </svg>
+                                        <span>Payout</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#postback">
+                                        <svg class="icons-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 14 15" style="enable-background:new 0 0 14 15;" xml:space="preserve">
+                                        <path d="M7.5,4H2.7l2.1-2.1L4.1,1.1L0.8,4.5l3.4,3.4l0.7-0.7L2.7,5h4.8C10,5,12,7,12,9.5S10,14,7.5,14H1v1h6.5c3,0,5.5-2.5,5.5-5.5
+                                            C13,6.5,10.5,4,7.5,4z M8,11H1v1h7V11z"/>
+                                        </svg>
+                                        <span>Postback</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="manager">
+                            <div>
+                                <h3>YOUR MANAGER</h3>
+                            </div>
+                            <div class="name">
+                                <img src="./images/person_1.png" alt="Mikhael">
+                                <span></span>
+                                <h4>Mikhael E.</h4>
+                            </div>
+                        </div>
+                        <div class="user-info">
+                            <svg class="icons-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17 18" style="enable-background:new 0 0 17 18;" xml:space="preserve">
+                            <path d="M17,9h-2V7.5C15,6.1,13.9,5,12.5,5H4.9L12,2.2V4h1V0.8L2.1,5C0.9,5.2,0,6.3,0,7.5v8C0,16.9,1.1,18,2.5,18h10
+                                c1.4,0,2.5-1.1,2.5-2.5V14h2V9z M14,15.5c0,0.8-0.7,1.5-1.5,1.5h-10C1.7,17,1,16.3,1,15.5v-8C1,6.7,1.7,6,2.5,6h10
+                                C13.3,6,14,6.7,14,7.5V9H8.5C7.1,9,6,10.1,6,11.5S7.1,14,8.5,14H14V15.5z M16,13H8.5C7.7,13,7,12.3,7,11.5S7.7,10,8.5,10H16V13z"/>
+                            </svg>
+                            <span>$ 1500.00</span>
+                        </div>
+                        <div class="user-info">
+                            <svg class="icons-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve">
+                            <path d="M9.5,4C7.6,4,6,5.6,6,7.5S7.6,11,9.5,11S13,9.4,13,7.5S11.4,4,9.5,4z M9.5,10C8.1,10,7,8.9,7,7.5S8.1,5,9.5,5S12,6.1,12,7.5
+                                S10.9,10,9.5,10z M9.5,1C4.8,1,1,4.8,1,9.5S4.8,18,9.5,18S18,14.2,18,9.5S14.2,1,9.5,1z M14,15.5c0-1.8-0.1-3.5-1.3-4.8l-0.7,0.7
+                                c1.1,1.1,1.1,2.7,1.1,4.5l0,0.3c-1,0.6-2.2,0.9-3.5,0.9S7,16.7,6,16.1l0-0.3c0-1.8,0-3.4,1.1-4.5l-0.7-0.7C5.1,12,5,13.7,5,15.5
+                                c-1.8-1.4-3-3.5-3-6C2,5.4,5.4,2,9.5,2S17,5.4,17,9.5C17,11.9,15.8,14.1,14,15.5z"/>
+                            </svg>
+                            <span>Leonardo Dicaprio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1 hamburger-btn" id="burger">
+                <div class="row burger-row">
+                    <div class="col-12 burger-col">
+                        <a href="#"><i class="fas fa-bars"></i></a>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-sm-11 col-md-11 col-lg-10 header-col">
+                <!-- HEADER -->
+                <div class="row header">
+                    <div class="col-lg-5 header-box header-box-mb">
+                    </div>
+                    <div class="col-md-4 col-lg-2 header-box">
+                        <svg class="icons-gray" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 17 18" style="enable-background:new 0 0 17 18;" xml:space="preserve">
+                        <path d="M17,9h-2V7.5C15,6.1,13.9,5,12.5,5H4.9L12,2.2V4h1V0.8L2.1,5C0.9,5.2,0,6.3,0,7.5v8C0,16.9,1.1,18,2.5,18h10
+                            c1.4,0,2.5-1.1,2.5-2.5V14h2V9z M14,15.5c0,0.8-0.7,1.5-1.5,1.5h-10C1.7,17,1,16.3,1,15.5v-8C1,6.7,1.7,6,2.5,6h10
+                            C13.3,6,14,6.7,14,7.5V9H8.5C7.1,9,6,10.1,6,11.5S7.1,14,8.5,14H14V15.5z M16,13H8.5C7.7,13,7,12.3,7,11.5S7.7,10,8.5,10H16V13z"/>
+                        </svg>
+                        <span><b>$ 1500.00</b></span>
+                        <svg class="icons-white" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 11 7" style="enable-background:new 0 0 11 7;" xml:space="preserve">
+                                <polygon points="5.5,6.2 0.1,0.9 0.9,0.1 5.5,4.8 10.1,0.1 10.9,0.9 "/>
+                        </svg>
+                    </div>
+                    <div class="col-md-2 col-lg-1 header-box header-box-effect not">
+                        <svg class="icons-gray" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 18 19" style="enable-background:new 0 0 18 19;" xml:space="preserve">
+                        <path d="M17,16l-2.4-3.7V6.5c0-3-2.5-5.5-5.5-5.5S3.6,3.5,3.6,6.5v5.8L1.1,16h5.5c0.2,1.1,1.2,2,2.4,2s2.2-0.9,2.4-2H17z M4.6,6.5
+                            C4.6,4,6.6,2,9.1,2s4.5,2,4.5,4.5V12h-9V6.5z M4.3,13h9.5l1.3,2H3L4.3,13z M9.1,17c-0.7,0-1.2-0.4-1.4-1h2.8
+                            C10.3,16.6,9.7,17,9.1,17z"/>
+                        </svg>
+                    </div>
+                    <div class="col-md-4 col-lg-3 header-box">
+                        <svg class="icons-gray" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve">
+                        <path d="M9.5,4C7.6,4,6,5.6,6,7.5S7.6,11,9.5,11S13,9.4,13,7.5S11.4,4,9.5,4z M9.5,10C8.1,10,7,8.9,7,7.5S8.1,5,9.5,5S12,6.1,12,7.5
+                            S10.9,10,9.5,10z M9.5,1C4.8,1,1,4.8,1,9.5S4.8,18,9.5,18S18,14.2,18,9.5S14.2,1,9.5,1z M14,15.5c0-1.8-0.1-3.5-1.3-4.8l-0.7,0.7
+                            c1.1,1.1,1.1,2.7,1.1,4.5l0,0.3c-1,0.6-2.2,0.9-3.5,0.9S7,16.7,6,16.1l0-0.3c0-1.8,0-3.4,1.1-4.5l-0.7-0.7C5.1,12,5,13.7,5,15.5
+                            c-1.8-1.4-3-3.5-3-6C2,5.4,5.4,2,9.5,2S17,5.4,17,9.5C17,11.9,15.8,14.1,14,15.5z"/>
+                        </svg>
+                        <span>Leonardo Dicaprio</span>
+                    </div>
+                    <div class="col-md-2 col-lg-1 header-box header-box-effect quit">
+                        <svg  class="icons-gray" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                            viewBox="0 0 19 15" style="enable-background:new 0 0 19 15;" xml:space="preserve">
+                        <path d="M13.9,3.1l-0.7,0.7L16.3,7H3v1h13.3l-3.1,3.1l0.7,0.7l4.4-4.4L13.9,3.1z M10,14H1V1h9v3h1V0H0v15h11v-4h-1V14z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <!-- PAGE GENERAL -->
+                        <div class="page page-active page-container" id="general">
+                            <div class="page-box">
+                                <div class="title">
+                                    <h3>GENERAL STATISTIC</h3>
+                                </div>
+                                <div class="date">
+                                    <input type="text" name="date-start" id="date-start" placeholder="2021-04-21">
+                                    <input type="text" name="date-end" id="date-end" placeholder="2021-04-22">
+                                    <i class="fas fa-undo"></i>
+                                </div>
+                                <div class="info">
+                                    <div class="info-box">
+                                        <h5>Visit Signups</h5>
+                                        <span>124</span>
+                                    </div>
+                                    <div class="info-box">
+                                        <h5>FTD</h5>
+                                        <span>445</span>
+                                    </div>
+                                    <div class="info-box">
+                                        <h5>Net deposit</h5>
+                                        <span>564</span>
+                                    </div>
+                                    <div class="info-box">
+                                        <h5>Turn over</h5>
+                                        <span>432</span>
+                                    </div>
+                                </div>
+                                <div class="chart">
+                                    <h5 class="chart-title">Earnings chart</h5>
+                                    <div class="chart-image">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- PAGE DETAILS -->
+            <div class="page page-container" id="details">
+                <div class="page-box details">
+                    <div class="title">
+                        <h3>DETAILS STATISTIC</h3>
+                    </div>
+                    <div class="date">
+                        <input type="text" name="date-start" id="date-start" placeholder="2021-04-13">
+                        <input type="text" name="date-end" id="date-end" placeholder="2021-04-13">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <div class="table-box">
+                        <div class="scroll">
+                            <table class="table-scroll">
+                                <thead>
+                                    <tr>
+                                    <th>Tracker date</th> 
+                                    <th>Initial date</th> 
+                                    <th>Visit</th>
+                                    <th>Unique</th>
+                                    <th>Signups</th>
+                                    <th>FTD</th>
+                                    <th>Depositors</th>
+                                    <th>Deposits($)</th>
+                                    <th>Payout($)</th>
+                                    <th>Turnover</th>
+                                    <th>Deal</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>aff/sam_test</td>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>235</td>
+                                        <td>448</td> 
+                                        <td>84</td>
+                                        <td>8</td>
+                                        <td>3</td>
+                                        <td>34,485.00</td>
+                                        <td>485.00</td>
+                                        <td>45.00</td>
+                                        <td>cpl(200)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>aff/sam_test</td>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>235</td>
+                                        <td>448</td> 
+                                        <td>84</td>
+                                        <td>8</td>
+                                        <td>3</td>
+                                        <td>34,485.00</td>
+                                        <td>485.00</td>
+                                        <td>45.00</td>
+                                        <td>cpl(200)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>aff/sam_test</td>
+                                        <td>17/04/05 <br>(12:45)</td>
+                                        <td>235</td>
+                                        <td>448</td> 
+                                        <td>84</td>
+                                        <td>8</td>
+                                        <td>3</td>
+                                        <td>34,485.00</td>
+                                        <td>485.00</td>
+                                        <td>45.00</td>
+                                        <td>cpl(200)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>aff/sam_test</td>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>235</td>
+                                        <td>448</td> 
+                                        <td>84</td>
+                                        <td>8</td>
+                                        <td>3</td>
+                                        <td>34,485.00</td>
+                                        <td>485.00</td>
+                                        <td>45.00</td>
+                                        <td>cpl(200)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PAGE links -->
+            <div class="page page-container" id="links">
+                <div class="page-box links-bx">
+                    <div class="title">
+                        <h3>LINKS</h3>
+                    </div>
+                    <div class="btn">
+                        <a href="#">+ add new</a>
+                    </div>
+                    <div class="table-box table-links">
+                        <table>
+                             <tbody>
+                                <tr>
+                                    <td>Home Page</td>
+                                    <td><a href="#">http://www.homepage.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Currently offer</td>
+                                    <td><a href="#">http://www.currently.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Blurpix</td>
+                                    <td><a href="#">http://www.blurpix.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Your Site</td>
+                                    <td><a href="#">http://www.yoursite.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Google</td>
+                                    <td><a href="#">http://www.google.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Facebook</td>
+                                    <td><a href="#">http://www.facebook.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Dashboard</td>
+                                    <td><a href="#">http://www.dashboard.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Twitter</td>
+                                    <td><a href="#">http://www.twitter.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Piece of Wind</td>
+                                    <td><a href="#">http://www.pieceofwind.com</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                             </tbody>
+                         </table>
+                    </div>
+                </div>
+            </div>
+             <!-- BANNERS links -->
+             <div class="page page-container" id="banners">
+                <div class="page-box banners-bx">
+                    <div class="title">
+                        <h3>BANNERS</h3>
+                    </div>
+                    <div class="btn">
+                        <a href="#">+ add new</a>
+                    </div>
+                    <div class="table-box table-links">
+                        <table>
+                             <tbody>
+                                <tr>
+                                    <td>Banner main</td>
+                                    <td><a href="#">http://www.website.com/bannermain.gif</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Sign up banner</td>
+                                    <td><a href="#">http://www.website.com/signup.gif</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Banner left side</td>
+                                    <td><a href="#">http://www.website.com/leftside.gif</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Vertical banner</td>
+                                    <td><a href="#">http://www.website.com/vert.gif</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Front banner</td>
+                                    <td><a href="#">http://www.website.com/front.gif</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Horizontal banner</td>
+                                    <td><a href="#">http://www.website.com/horizontal.gif</a></td>
+                                    <td>
+                                        <i class="fas fa-link"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </td>
+                                </tr>
+                             </tbody>
+                         </table>
+                    </div>
+                    <div class="btn">
+                        <a href="#">+ add new</a>
+                    </div>
+                </div>
+            </div>
+            <!-- PERSONAL DATA links -->
+            <div class="page page-container" id="data">
+                <div class="page-box personal-bx">
+                    <div class="title">
+                        <h3>PERSONAL DATA</h3>
+                    </div>
+                    <form>
+                        <div class="form-basic">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name"  required>
+                            <label for="surname">Surname</label>
+                            <input type="text" name="surname" id="surname" required>
+                            <label for="phone">Phone number</label>
+                            <input type="number" name="phone" id="phone" required>
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-skype">
+                            <label for="skype">Skype</label>
+                            <input type="text" name="skype" id="skype">
+                            <label for="icq">ICQ</label>
+                            <input type="text" name="icq" id="icq">
+                            <label for="msn">Msn</label>
+                            <input type="text" name="msn" id="msn">
+                        </div>
+                        <div class="form-wallet">
+                            <label for="wallet">Wallet</label>
+                            <input type="text" name="wallet" id="wallet">
+                        </div>
+                        <div class="form-password">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password">
+                            <label for="repeat">Repeat</label>
+                            <input type="password" name="repeat" id="repeat">
+                        </div>
+                        <div class="btn">
+                            <input type="submit" value="Save">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- PAYOUTS DATA links -->
+            <div class="page page-container" id="payout">
+                <div class="page-box payouts-bx">
+                    <div class="title">
+                        <h3>PAYOUT DATA HISTORY</h3>
+                    </div>
+                    <div class="date">
+                        <input type="text" name="date-start" id="date-start" placeholder="2021-04-21">
+                        <input type="text" name="date-end" id="date-end" placeholder="2021-04-22">
+                        <i class="fas fa-undo"></i>
+                    </div>
+                    <div class="payouts-table-box">
+                        <div class="payouts-table-container">
+                            <table class="payouts-table">
+                                <thead>
+                                    <tr>
+                                        <th>Date</th> 
+                                        <th>Amount($)</th> 
+                                        <th>Deal</th>
+                                        <th>Acount</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                    <tr>
+                                        <td>17/04/05<br> (12:45)</td>
+                                        <td>34 225,00</td>
+                                        <td>cpl(200)</td> 
+                                        <td>bank</td> 
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- POSTBACK DATA links -->
+            <div class="page page-container" id="postback">
+                <div class="page-box postback-bx">
+                    <div class="title">
+                        <h3>POSTBACK</h3>
+                    </div>
+                    <div class="postback-p">
+                        <p>You can insert some parameters in this postback</p>
+                    </div>
+                    <div class="postback-form">
+                        <div class="postback-form-box">
+                            <label for="signup">Sign up</label>
+                            <textarea name="signup" id="signup" cols="30" rows="10"></textarea>
+                        </div>
+                        <div  class="postback-form-box">
+                            <label for="deposit">Deposit</label>
+                            <textarea name="deposit" id="deposit" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <div class="postback-form-rest">
+                        <label for="postback-type">Postback type</label>
+                        <input type="text" id="postback-type" name="postback-type" placeholder="S2S(http://)">
+                        <label for="postback-countries">Select countries</label>
+                        <input type="select" id="postback-countrie" name="postback-countries">
+                        <label for="postback-sending">Sending options</label>
+                        <input type="select" id="postback-sending" name="postback-sending">
+                    </div>
+                    <div>
+                        <p class="postback-p">NOT send statuses</p>
+                    </div>
+                </div>
+            </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
