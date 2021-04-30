@@ -26,9 +26,11 @@
 
 .links ul {
     list-style-type: none;
-    padding: 0;
+    padding: 10px 4px;
+    margin-top: 10px;
     li {
-        padding: 8px 12px;
+        padding-left: 2px;
+        margin-top: 8px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -53,6 +55,7 @@
 
 .manager {
     border-top: 1px solid $color-gray;
+    padding-left: 10px;
 }
 
 .manager h3 {
@@ -129,9 +132,14 @@
         display: none;
         padding-right: 0;
         padding-left: 10px;
+        
     }
     .sidebar-active {
         display: block;
+        animation-name: fadeIn;
+        transition: .10s;
+        animation-duration: .7s;
+        animation-iteration-count: 1;
     }
     .manager {
         padding: 0 10px;
@@ -141,6 +149,9 @@
     } 
     #data-spn {
         font-size: 14px;
+    }
+    .links ul {
+        padding-left: 10px;
     }
 }
 
@@ -158,3 +169,13 @@
         }
     } 
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
