@@ -808,11 +808,12 @@ table td, table th {
 
 .links ul {
   list-style-type: none;
-  padding: 0;
+  padding: 10px 4px;
+  margin-top: 10px;
 }
 
 .links ul li {
-  padding: 8px 12px;
+  padding-left: 2px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -846,6 +847,7 @@ table td, table th {
 
 .manager {
   border-top: 1px solid #b3b3b3;
+  padding-left: 10px;
 }
 
 .manager h3 {
@@ -934,6 +936,10 @@ table td, table th {
   }
   .sidebar-active {
     display: block;
+    animation-name: fadeIn;
+    transition: .10s;
+    animation-duration: .7s;
+    animation-iteration-count: 1;
   }
   .manager {
     padding: 0 10px;
@@ -943,6 +949,9 @@ table td, table th {
   }
   #data-spn {
     font-size: 14px;
+  }
+  .links ul {
+    padding-left: 10px;
   }
 }
 
@@ -958,6 +967,15 @@ table td, table th {
   }
   .manager h3 {
     margin: 12px 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
