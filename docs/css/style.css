@@ -839,6 +839,7 @@ table td, table th {
   -ms-flex-align: center;
       align-items: center;
   color: #b3b3b3;
+  width: 100%;
 }
 
 .links ul li a:hover {
